@@ -1,6 +1,6 @@
 # paybond-crewai-procurement-agent
 
-Procurement crew (CrewAI and Paybond spend gates). Clone, log in to Paybond sandbox, and run smoke in under a minute.
+Procurement crew (CrewAI + Paybond spend gates). Clone, log in to Paybond sandbox, and run smoke in under a minute.
 
 ## Quickstart (60 seconds)
 

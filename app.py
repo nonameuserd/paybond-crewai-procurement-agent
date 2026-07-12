@@ -1,8 +1,8 @@
 """Procurement crew (CrewAI + Paybond spend gates) — no live LLM required.
 
 Modes:
-  python app.py           # approve path (12000 cents, under $250 intent budget)
-  python app.py --deny    # over-budget deny path (50000 cents)
+  python app.py           # approve path (12000 cents, under intent budget)
+  python app.py --deny    # over-budget deny path
 """
 
 from __future__ import annotations
@@ -17,7 +17,7 @@ from paybond_config import create_paybond_client
 
 PRIMARY_OPERATION = "procurement.submit_po"
 APPROVE_SPEND_CENTS = 12000
-DENY_SPEND_CENTS = 50000  # above intent budget ($250)
+DENY_SPEND_CENTS = 50000  # above intent budget
 
 
 @tool("procurement.search_catalog")
