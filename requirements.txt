@@ -1,2 +1,2 @@
-paybond-kit[crewai]>=0.12.5
+paybond-kit[crewai]>=0.12.6
 crewai>=0.80.0
