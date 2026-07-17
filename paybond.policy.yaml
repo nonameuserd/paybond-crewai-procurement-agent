@@ -1,5 +1,6 @@
-# Reference implementation — edit freely. Regenerate with:
-# edit paybond.policy.yaml directly
+# Reference policy for CLI smoke (`npm run smoke`).
+# Runtime spend for app.py / crew.py is resolved in paybond_wiring.py from the
+# catalog (SKU × quantity) — not from an agent-supplied amount_cents field.
 
 version: 1
 name: procurement-agent-v1
@@ -8,7 +9,7 @@ default_deny: true
 tools:
   procurement.submit_po:
     side_effecting: true
-    spend_from_args: amount_cents
+    max_spend_cents: 25000
     evidence_preset: cost_and_completion
 
   procurement.list_vendors:
